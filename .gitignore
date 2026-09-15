@@ -1,0 +1,12 @@
+# 本机文件与临时生成内容
+.DS_Store
+.tmp/
+node_modules/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+skill_token.txt
+*.pem
+*.key
