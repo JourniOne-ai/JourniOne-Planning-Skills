@@ -12,17 +12,17 @@
 
 여행 아이디어 한마디로 시작하세요. JourniOne은 매일 무엇을 할지 계획하고, 동선과 예산에 맞는 호텔을 찾고, 여행 전체를 아름답게 살펴보고 공유할 수 있는 **Travel Journal 인터랙티브 여행 가이드**로 만듭니다. 플립북을 넘기듯 여행을 둘러보세요. 정보를 모으는 시간은 줄이고, 목적지는 더 깊이 이해하며, 예산은 더 알차게 쓸 수 있습니다.
 
-![도쿄, 베이징, 골드코스트, 몰디브 등 다양한 여행지의 가이드 표지](assets/readme/journione-travel-journal-covers.png)
+![도쿄, 베이징, 골드코스트, 몰디브 등 다양한 여행지의 가이드 표지](assets/readme/journione-travel-journal-covers.webp)
 
 ## 아이디어에서 실제로 따라갈 수 있는 일정으로
 
 어디로 가고 싶은지, 무엇을 좋아하는지, 누구와 떠나는지 알려주세요. 기존 일정이나 사진, 자료를 전달해도 됩니다. JourniOne은 취향과 여행 속도에 맞춰 일별 동선을 짜고, 주요 장소와 교통편을 확인하며, 관광과 식사, 이동, 휴식 시간을 함께 고려합니다.
 
-![출처 확인, 호텔·항공편 검색, 상세하게 탐색할 수 있는 여행 구성](assets/readme/journione-planning-features.png)
+![출처 확인, 호텔·항공편 검색, 상세하게 탐색할 수 있는 여행 구성](assets/readme/journione-planning-features.webp)
 
 일정을 확정하면 여행 수첩처럼 자세히 살펴볼 수 있는 시각적 가이드가 됩니다. **Journal 보기**에서는 사진과 글, 매일의 계획을, **Map 보기**에서는 장소와 경로를 확인하세요. 관심 있는 장소를 열면 더 많은 정보를 볼 수 있습니다. 출발 전에는 여행지를 알아보고, 여행 중에는 다음 일정을 확인할 수 있습니다.
 
-![쓰촨 서부 여행의 Map 보기와 일별 일정](assets/readme/journione-map-itinerary.png)
+![쓰촨 서부 여행의 Map 보기와 일별 일정](assets/readme/journione-map-itinerary.webp)
 
 *장소의 위치를 지도에서 보고, 매일의 일정 및 교통편과 함께 확인하세요.*
 
@@ -38,7 +38,7 @@ JourniOne은 **TourMind 호텔 검색·예약 서비스**를 통해 Ctrip, Fligg
 
 항공권이 필요하면 **Kiwi.com**에서 검색하고, 도착·출발 시각과 공항 이동, 숙박을 같은 일정에 연결할 수 있습니다. 호텔과 항공편은 필요할 때만 조회합니다. 가이드를 만들거나 후보를 임시 선택하는 것만으로 예약하지 않습니다.
 
-![쓰촨 서부 가이드 옆에서 호텔, 항공편, 비용을 확인하는 Bookings 패널](assets/readme/journione-hotel-flight-bookings.png)
+![쓰촨 서부 가이드 옆에서 호텔, 항공편, 비용을 확인하는 Bookings 패널](assets/readme/journione-hotel-flight-bookings.webp)
 
 *호텔과 항공편도 같은 가이드에서 관리합니다. 화면의 가격과 상태는 인터페이스 설명용입니다.*
 
@@ -46,7 +46,7 @@ JourniOne은 **TourMind 호텔 검색·예약 서비스**를 통해 Ctrip, Fligg
 
 가이드, 일정 카드, 공유 링크를 친구에게 보내거나 소셜 미디어에 올려보세요. 다른 사람도 여행 아이디어를 즐기고, 매일 무엇을 할지와 각 장소가 어디인지 알 수 있습니다. 함께 계획을 논의하는 출발점이나 다음 여행의 영감이 됩니다.
 
-![쓰촨 서부의 그림 여행 가이드와 목적지 개요, 여행 하이라이트](assets/readme/journione-journal-overview.png)
+![쓰촨 서부의 그림 여행 가이드와 목적지 개요, 여행 하이라이트](assets/readme/journione-journal-overview.webp)
 
 *자세히 탐색할 수 있는 시각적 가이드로 친구에게 동선과 여행의 매력을 전하세요.*
 

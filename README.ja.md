@@ -12,17 +12,17 @@
 
 旅のアイデアをひと言伝えるところから。JourniOne は毎日の過ごし方を組み立て、ルートと予算に合うホテルを探し、旅全体を美しく、詳しく見られて共有もできる **Travel Journal — インタラクティブな旅行ガイド**にまとめます。フリップブックをめくるように旅を眺めながら、下調べの手間を減らし、目的地をもっと知り、予算を上手に使えます。
 
-![東京、北京、ゴールドコースト、モルディブなどの旅行ガイド表紙](assets/readme/journione-travel-journal-covers.png)
+![東京、北京、ゴールドコースト、モルディブなどの旅行ガイド表紙](assets/readme/journione-travel-journal-covers.webp)
 
 ## アイデアから、実際に歩ける旅の計画へ
 
 行き先、好きなこと、一緒に旅する人を教えてください。既存の旅程や写真、資料から始めることもできます。JourniOne は興味やペースに合わせて日ごとのルートを考え、主要な場所や交通を確認し、観光、食事、移動、休憩を無理なくつなぎます。
 
-![情報源、ホテルと航空券の検索、詳しく見られる旅の構成](assets/readme/journione-planning-features.png)
+![情報源、ホテルと航空券の検索、詳しく見られる旅の構成](assets/readme/journione-planning-features.webp)
 
 計画を確認すると、旅行手帳のように細部まで見られるビジュアルガイドになります。**Journal ビュー**では写真や文章、毎日の予定を、**Map ビュー**では場所とルートを確認できます。気になる場所を開けば詳しい情報も。出発前の下調べにも、旅先で次の予定を確認するときにも使えます。
 
-![川西の Map ビューと日ごとの旅程](assets/readme/journione-map-itinerary.png)
+![川西の Map ビューと日ごとの旅程](assets/readme/journione-map-itinerary.webp)
 
 *場所の位置関係を、毎日の予定や交通と照らし合わせて確認できます。*
 
@@ -38,7 +38,7 @@ JourniOne は **TourMind のホテル検索・予約サービス**を通じて�
 
 航空券が必要なら **Kiwi.com** で検索し、到着・出発時刻、空港アクセス、宿泊を同じ旅程につなぎます。ホテルと航空券は必要なときだけ検索します。ガイドの生成や候補の選択だけで注文は行いません。
 
-![川西の旅行ガイドと、ホテル・航空券・費用をまとめた Bookings パネル](assets/readme/journione-hotel-flight-bookings.png)
+![川西の旅行ガイドと、ホテル・航空券・費用をまとめた Bookings パネル](assets/readme/journione-hotel-flight-bookings.webp)
 
 *ホテルも航空券も同じガイドに。画像内の価格や状態は画面の紹介用です。*
 
@@ -46,7 +46,7 @@ JourniOne は **TourMind のホテル検索・予約サービス**を通じて�
 
 ガイド、旅程カード、共有リンクを友人に送ったり、SNS に投稿したりできます。旅の楽しさだけでなく、毎日何をするのか、どこに行くのかも伝わり、一緒に計画を相談したり、次の旅のヒントにしたりできます。
 
-![川西のビジュアルガイドと目的地の概要・見どころ](assets/readme/journione-journal-overview.png)
+![川西のビジュアルガイドと目的地の概要・見どころ](assets/readme/journione-journal-overview.webp)
 
 *詳しく見られる図文ガイドで、ルートや旅の魅力が友人にも伝わります。*
 

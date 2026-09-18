@@ -12,17 +12,17 @@
 
 Partez d'une idée de voyage. JourniOne vous aide à organiser chaque journée, à trouver des hôtels adaptés à votre parcours et à votre budget, puis à réunir le tout dans un **Travel Journal : un guide de voyage interactif**, élégant, à explorer et à partager comme un carnet que l'on feuillette. Passez moins de temps à rassembler des conseils, découvrez mieux votre destination et profitez davantage de votre budget.
 
-![Couvertures de guides pour Tokyo, Pékin, la Gold Coast, les Maldives et d'autres destinations](assets/readme/journione-travel-journal-covers.png)
+![Couvertures de guides pour Tokyo, Pékin, la Gold Coast, les Maldives et d'autres destinations](assets/readme/journione-travel-journal-covers.webp)
 
 ## D'une idée à un itinéraire que l'on peut suivre
 
 Dites à JourniOne où vous souhaitez aller, ce que vous aimez et avec qui vous partez, ou transmettez-lui un itinéraire, des photos et des notes. Il organise les journées selon vos envies et votre rythme, vérifie les lieux et transports essentiels, et équilibre visites, repas, déplacements et repos.
 
-![Fonctions de préparation : sources, hôtels, vols et contenu de voyage à explorer](assets/readme/journione-planning-features.png)
+![Fonctions de préparation : sources, hôtels, vols et contenu de voyage à explorer](assets/readme/journione-planning-features.webp)
 
 Une fois confirmé, votre programme devient un guide visuel dont vous pouvez explorer les détails comme dans un carnet de voyage. La **vue Journal** présente les images, les textes et les journées ; la **vue Map** montre les lieux et les parcours. Ouvrez un lieu pour en savoir plus. Découvrez la destination avant le départ, puis consultez la suite du programme pendant le voyage.
 
-![Vue Map d'un voyage dans l'ouest du Sichuan, à côté de l'itinéraire quotidien](assets/readme/journione-map-itinerary.png)
+![Vue Map d'un voyage dans l'ouest du Sichuan, à côté de l'itinéraire quotidien](assets/readme/journione-map-itinerary.webp)
 
 *Repérez les lieux sur la carte et consultez en parallèle les activités et les transports de chaque journée.*
 
@@ -38,7 +38,7 @@ Après avoir choisi un hôtel, vous pouvez poursuivre la réservation via un can
 
 Si vous avez besoin de vols, JourniOne peut également les rechercher via **Kiwi.com** et relier horaires d'arrivée et de départ, transferts aéroport et hébergements au même itinéraire. Hôtels et vols sont recherchés uniquement selon vos besoins. Générer un guide ou retenir provisoirement une option ne passe aucune commande.
 
-![Panneau Bookings présentant hôtels, vols et coûts à côté du guide du Sichuan](assets/readme/journione-hotel-flight-bookings.png)
+![Panneau Bookings présentant hôtels, vols et coûts à côté du guide du Sichuan](assets/readme/journione-hotel-flight-bookings.webp)
 
 *Hôtels et vols restent associés au même guide. Les prix et statuts de la capture servent uniquement à présenter l'interface.*
 
@@ -46,7 +46,7 @@ Si vous avez besoin de vols, JourniOne peut également les rechercher via **Kiwi
 
 Envoyez le guide, les cartes d'itinéraire ou un lien à vos amis, ou publiez-les sur les réseaux sociaux. Chacun peut apprécier votre idée, comprendre le programme de chaque jour et situer les lieux : de quoi préparer le voyage ensemble ou en inspirer un autre.
 
-![Guide illustré de l'ouest du Sichuan avec aperçu de la destination et temps forts](assets/readme/journione-journal-overview.png)
+![Guide illustré de l'ouest du Sichuan avec aperçu de la destination et temps forts](assets/readme/journione-journal-overview.webp)
 
 *Un guide visuel à explorer aide vos amis à comprendre le parcours et ses points forts.*
 

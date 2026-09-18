@@ -12,17 +12,17 @@
 
 从一句旅行想法开始，JourniOne 帮你排好每天怎么玩，找到适合路线与预算的酒店，再把整趟旅程做成和 Flipbook 一样精美、可探索、可分享的 **Travel Journal 可交互旅行手册**。少花时间做攻略，多一点对目的地的了解，让旅行更省心，也让预算花得更值。
 
-![JourniOne 可视化路书封面：东京、北京、黄金海岸、马尔代夫等旅行主题](assets/readme/journione-travel-journal-covers.png)
+![JourniOne 可视化路书封面：东京、北京、黄金海岸、马尔代夫等旅行主题](assets/readme/journione-travel-journal-covers.webp)
 
 ## 从旅行想法，到能照着走的计划
 
 告诉 JourniOne 你想去哪里、喜欢什么、和谁出发，或把已有行程、照片与资料交给它。它会围绕你的兴趣与节奏安排逐日路线，核实关键地点与交通，兼顾游玩、吃饭、移动和休息，让计划更贴近真实出行。
 
-![JourniOne 规划能力展示：来源信息、机酒查询与可探索的旅行内容](assets/readme/journione-planning-features.png)
+![JourniOne 规划能力展示：来源信息、机酒查询与可探索的旅行内容](assets/readme/journione-planning-features.webp)
 
 确认后，行程会成为一份像翻阅旅行手册一样、可以继续探索细节的可视化路书：在 **Journal 视图**看图文与每日安排，在 **Map 视图**看地点和路线，点开感兴趣的地点了解更多信息。出发前用它认识目的地，旅途中用它查看接下来的安排。
 
-![川西行程的 Map 视图：地图点位与逐日安排并列查看](assets/readme/journione-map-itinerary.png)
+![川西行程的 Map 视图：地图点位与逐日安排并列查看](assets/readme/journione-map-itinerary.webp)
 
 *在地图上查看地点分布，并对照每天的行程与交通安排。*
 
@@ -38,7 +38,7 @@ JourniOne 通过 **TourMind 酒店查询与预订服务**，查询聚合携程�
 
 需要机票时，JourniOne 也能通过 **Kiwi.com** 查询航班，把抵离时间、机场接驳和住宿安排接回同一份行程。酒店和航班只在你需要时查询；生成路书或暂选机酒不会自动下单。
 
-![川西路书的 Bookings 面板：在同一行程中查看酒店、航班与费用](assets/readme/journione-hotel-flight-bookings.png)
+![川西路书的 Bookings 面板：在同一行程中查看酒店、航班与费用](assets/readme/journione-hotel-flight-bookings.webp)
 
 *酒店与航班接回同一份路书。截图中的价格与状态仅用于展示界面。*
 
@@ -46,7 +46,7 @@ JourniOne 通过 **TourMind 酒店查询与预订服务**，查询聚合携程�
 
 把精美的路书、行程卡片或分享链接发给朋友，也可以发布到社交媒体。别人既能欣赏你的旅行想法，也能了解每天怎么玩、地点在哪里，让一份计划成为同行讨论的起点，或启发下一趟旅行。
 
-![川西可视化路书与目的地概览：图文呈现每天的体验和旅行亮点](assets/readme/journione-journal-overview.png)
+![川西可视化路书与目的地概览：图文呈现每天的体验和旅行亮点](assets/readme/journione-journal-overview.webp)
 
 *一份可探索的图文路书，让朋友看懂你的旅行想法与路线亮点。*
 
