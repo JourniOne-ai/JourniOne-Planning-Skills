@@ -3,15 +3,7 @@ interface:
   short_description: "把旅行想法变成每天怎么玩的路线，生成带地图、能分享的旅行日志，机酒按需补充"
   icon_small: "./assets/journione-mark.svg"
   icon_large: "./assets/journione-lockup.svg"
-  default_prompt: "使用 Travel Journal Creator，先自动检查并准备必需的酒店 Skill 与航班 MCP，再帮我安排一趟轻松的旅行；先看看每天怎么玩，确认后做成带地图、能分享的旅行日志。"
-
-dependencies:
-  tools:
-    - type: "mcp"
-      value: "kiwi-com-flight-search"
-      description: "必需依赖：初始化时连接并验证 Kiwi.com search-flight，按需免登录查询实时航班"
-      transport: "streamable_http"
-      url: "https://mcp.kiwi.com"
+  default_prompt: "使用 Travel Journal Creator，准备好 TourMind 酒店与机票一站式预订能力，再帮我安排一趟轻松的旅行；先看看每天怎么玩，确认后做成带地图、能分享的旅行日志，机酒按需补充。"
 
 policy:
   allow_implicit_invocation: true

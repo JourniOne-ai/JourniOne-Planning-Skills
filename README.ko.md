@@ -36,7 +36,7 @@ JourniOne은 **TourMind 호텔 검색·예약 서비스**를 통해 Ctrip, Fligg
 
 호텔을 선택한 뒤 지원되는 예약 채널에서 예약을 진행할 수 있습니다. 객실과 금액, 약관을 확인하고 필요한 인증과 결제를 마친 후 예약 확인 결과를 확인하세요. 해당 플랫폼과 공급업체가 약정에 따라 예약을 이행하며, 변경·취소와 사후 지원에는 선택한 객실 및 주문 조건이 적용됩니다.
 
-항공권이 필요하면 **Kiwi.com**에서 검색하고, 도착·출발 시각과 공항 이동, 숙박을 같은 일정에 연결할 수 있습니다. 호텔과 항공편은 필요할 때만 조회합니다. 가이드를 만들거나 후보를 임시 선택하는 것만으로 예약하지 않습니다.
+항공권이 필요하면 JourniOne이 항공편을 검색하고 비교하며, **TourMind Booking Skills**가 호텔과 함께 항공편 검색, 운임 확인, 예약 기능을 보완합니다. 항공 일정, 공항 이동, 숙박을 같은 여정에 반영합니다. 인증은 필요한 단계에서 안내하고 예약과 결제는 각각 확인을 받습니다.
 
 ![쓰촨 서부 가이드 옆에서 호텔, 항공편, 비용을 확인하는 Bookings 패널](assets/readme/journione-hotel-flight-bookings.webp)
 
@@ -57,7 +57,7 @@ JourniOne은 **TourMind 호텔 검색·예약 서비스**를 통해 Ctrip, Fligg
 ## 시작하기
 
 1. 클라이언트의 Skill 관리 화면에서 [JourniOne-Planning-Skills](https://github.com/JourniOne-ai/JourniOne-Planning-Skills)를 가져오거나, [설치 안내](INSTALL.md)에 따라 배포 패키지를 사용하세요. 표시 이름은 **Travel Journal Creator**입니다.
-2. 설치 Agent가 필수 항목인 **TourMind 호텔 Skill**과 **Kiwi MCP**를 확인하고 준비합니다. 이미 있는 기능은 재사용하며, 권한 승인·수동 조작·새로고침이 필요할 때만 안내합니다. 클라이언트가 두 항목을 모두 발견할 수 있어야 초기화가 완료됩니다.
+2. 호텔과 항공권을 함께 예약할 수 있는 **TourMind Booking Skills**를 주요 의존 기능으로 설치합니다. Kiwi.com 항공편 검색(MCP) 등 비교 도구를 추가할 수 있습니다. Agent가 가능한 준비를 자동으로 진행하고 사용자 조작이 필요한 경우에만 간단히 안내합니다.
 3. Skill 이름을 입력하지 말고 자연스럽게 여행 요구를 말하세요. 여행 방향과 일별 계획을 보고 수정한 뒤 확정하면 가이드를 만듭니다. 호텔과 항공편은 필요에 따라 조회하고 예약합니다.
 
 가이드 생성에는 JourniOne Token이나 로컬 JourniOne MCP 서비스가 필요하지 않습니다. 기본 연결 주소는 [journione.ai](https://journione.ai/)입니다. 포함된 스크립트는 Node.js 22 이상이 필요하며, 클라이언트는 웹 검색, 파일 읽기, HTTPS 요청, 원격 MCP를 지원해야 합니다. 호텔 예약과 결제 인증은 해당 채널의 규정을 따릅니다. [의존성 안내](DEPENDENCIES.md)를 참고하세요.

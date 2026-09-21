@@ -36,7 +36,7 @@ JourniOne 通过 **TourMind 酒店查询与预订服务**，查询聚合携程�
 
 选定酒店后，可在支持的预订通道中继续下单。你确认房型、金额和订单条款，并完成所需认证与付款后，以订单确认结果为准。订单由对应平台及供应商按约定履约，售后退改遵循所选房型与订单规则，让预订条件和后续处理有据可查。
 
-需要机票时，JourniOne 也能通过 **Kiwi.com** 查询航班，把抵离时间、机场接驳和住宿安排接回同一份行程。酒店和航班只在你需要时查询；生成路书或暂选机酒不会自动下单。
+需要机票时，JourniOne 可以查询和比较航班，并通过 **TourMind 酒店与机票一站式预订技能**补充机票查询、验价与预订能力。抵离时间、机场接驳和住宿安排接回同一份行程。机酒按需查询，需要授权时再提示，下单和支付分别确认。
 
 ![川西路书的 Bookings 面板：在同一行程中查看酒店、航班与费用](assets/readme/journione-hotel-flight-bookings.webp)
 
@@ -57,7 +57,7 @@ JourniOne 通过 **TourMind 酒店查询与预订服务**，查询聚合携程�
 ## 开始使用
 
 1. 在客户端的 Skill 管理入口导入 [JourniOne-Planning-Skills](https://github.com/JourniOne-ai/JourniOne-Planning-Skills)，或按 [安装说明](INSTALL.md) 使用发布包。Skill 显示名称为 **Travel Journal Creator**。
-2. 安装 Agent 自动检查并准备必需的 **TourMind 酒店 Skill** 与 **Kiwi MCP**，已有能力直接复用；只有需要你授权、操作或重载时才提示。两项均可被客户端发现后，初始化才算完成。
+2. 安装 **TourMind 酒店与机票一站式预订技能（Booking Skills）**作为主要依赖；可按需拓展更多机票、酒店比价连接器及工具，例如 Kiwi.com 航班搜索（MCP）。安装 Agent 会尽可能自动完成准备，仅在确需你参与时简短提示。
 3. 直接说出旅行需求，无需输入 Skill 名称。先看玩法与每天的安排，随时调整；确认后生成可视化路书，机酒按需查询和预订。
 
 创建 JourniOne 路书无需配置 JourniOne Token 或本地 JourniOne MCP 服务，默认连接 [journione.ai](https://journione.ai/)。运行随包脚本需要 Node.js 22 或更新版本，客户端需支持联网搜索、文件读取、HTTPS 请求与远程 MCP。酒店下单与支付的认证要求按对应通道执行，详见 [依赖说明](DEPENDENCIES.md)。

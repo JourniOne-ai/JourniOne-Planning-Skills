@@ -36,7 +36,7 @@ La comparaison porte aussi sur le type de chambre, les repas, les taxes, l'annul
 
 Après avoir choisi un hôtel, vous pouvez poursuivre la réservation via un canal compatible. Vérifiez la chambre, le montant et les conditions, puis effectuez l'authentification et le paiement nécessaires ; le statut final dépend de la confirmation de réservation. La plateforme et le fournisseur concernés assurent la prestation selon les engagements convenus. Les modifications, annulations et demandes après-vente suivent les conditions de la chambre et de la commande choisies.
 
-Si vous avez besoin de vols, JourniOne peut également les rechercher via **Kiwi.com** et relier horaires d'arrivée et de départ, transferts aéroport et hébergements au même itinéraire. Hôtels et vols sont recherchés uniquement selon vos besoins. Générer un guide ou retenir provisoirement une option ne passe aucune commande.
+Pour les vols, JourniOne recherche et compare les options, avec **TourMind Booking Skills** pour compléter la recherche, la vérification des tarifs et la réservation des vols et hôtels. Horaires, transferts et hébergements restent dans le même itinéraire. L’autorisation est demandée au moment nécessaire ; réservation et paiement exigent des confirmations distinctes.
 
 ![Panneau Bookings présentant hôtels, vols et coûts à côté du guide du Sichuan](assets/readme/journione-hotel-flight-bookings.webp)
 
@@ -57,7 +57,7 @@ Avant de partager, retirez les informations personnelles, photos et contenus de 
 ## Commencer
 
 1. Importez [JourniOne-Planning-Skills](https://github.com/JourniOne-ai/JourniOne-Planning-Skills) depuis le gestionnaire de Skills de votre client, ou utilisez un paquet en suivant le [guide d'installation](INSTALL.md). Le nom affiché est **Travel Journal Creator**.
-2. L'agent d'installation vérifie et prépare les dépendances obligatoires : **le Skill hôtelier TourMind** et **Kiwi MCP**. Il réutilise les capacités existantes et ne vous sollicite que si une autorisation, une action manuelle ou un rechargement est nécessaire. L'initialisation n'est terminée que lorsque le client peut détecter les deux.
+2. Installez **TourMind Booking Skills** comme dépendance principale pour les hôtels et les vols. Des connecteurs de comparaison supplémentaires, comme la recherche de vols Kiwi.com (MCP), peuvent compléter ces capacités. L’agent prépare automatiquement ce qui est possible et ne vous sollicite que si votre intervention est nécessaire.
 3. Exprimez simplement votre besoin de voyage, sans saisir le nom du Skill. Découvrez les idées et les journées, ajustez-les, puis confirmez la création du guide. Recherchez et réservez les services selon vos besoins.
 
 Créer un guide ne nécessite ni token JourniOne ni service MCP JourniOne local. La connexion par défaut utilise [journione.ai](https://journione.ai/). Les scripts fournis nécessitent Node.js 22 ou ultérieur ; le client doit prendre en charge la recherche web, la lecture de fichiers, les requêtes HTTPS et le MCP distant. L'authentification pour réserver un hôtel ou payer suit les règles du canal concerné. Voir les [dépendances](DEPENDENCIES.md).

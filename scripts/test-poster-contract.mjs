@@ -2,7 +2,7 @@
 // 用途：离线验证 Skill 请求、接受响应、卡片及文件引用；可与 dev 源码契约对照。
 // 参数：可选 --server-root <dev 源码目录>。
 // 输出：中文测试摘要；退出码：0=成功，1=失败。
-// Known Issues: 2026-09-15 修正已更名的显示名称断言，并覆盖多语言 README 引用； 地点名优先检索并保留活动标题；不调用真实生成，不代替部署配置和浏览器验收；引用检查排除代码块内示例占位符；正式默认域名与跨域响应使用注入传输验证。
+// Known Issues: 2026-09-21 引用检查排除 .tmp、.git、node_modules，避免把测试下载的第三方文档当作交付文件；跳过外部 URI。2026-09-15 修正显示名称断言并覆盖多语言 README；地点名优先检索并保留活动标题；不调用真实生成，不代替部署配置和浏览器验收；引用检查排除代码块内示例占位符；正式默认域名与跨域响应使用注入传输验证。
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -103,9 +103,9 @@ check('卡片实际执行脚本后地图可展开并再次收起',()=>{
  click();assert.equal(attrs['aria-expanded'],'false');assert.equal(panel.hidden,true);assert.equal(button.textContent,'Google Maps 逐日路线 展开');
 });
 check('全部本地 Markdown 引用可解析',()=>{
- const files=fs.readdirSync(root,{recursive:true}).filter(x=>x.endsWith('.md')).map(x=>path.join(root,x));
+ const files=fs.readdirSync(root,{recursive:true}).filter(x=>x.endsWith('.md')&&!x.split(path.sep).some(part=>['.tmp','.git','node_modules'].includes(part))).map(x=>path.join(root,x));
  for(const file of files){const text=fs.readFileSync(file,'utf8').replace(/```[\s\S]*?```/g,'');for(const match of text.matchAll(/\]\(([^)]+)\)/g)){
-  const target=match[1];if(target.startsWith('http')||target.startsWith('#')||target.includes('<'))continue;
+  const target=match[1];if(/^[a-z][a-z0-9+.-]*:/i.test(target)||target.startsWith('#')||target.includes('<'))continue;
   assert.ok(fs.existsSync(path.resolve(path.dirname(file),target.split('#')[0])),`引用缺失：${path.basename(file)} → ${target}`);
  }}
  const entry=fs.readFileSync(path.join(root,'SKILL.md'),'utf8');assert.ok(entry.startsWith('---\nname: travel-journal-creator\n'));
