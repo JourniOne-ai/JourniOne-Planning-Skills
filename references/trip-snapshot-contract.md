@@ -54,14 +54,34 @@ Idempotency-Key: <8–160 字符，当前逻辑提交稳定不变>
 
 Schema 的 @2 是接口版本，不是另一种产品模式。request_origin 在当前 Skill 版本固定，不能在重试期间改名。幂等键只由 Header 提供，不依赖 JSON 中的同名字段。
 
+### 已确认旅行信息的映射
+
+上面的无日期示例不代表可以省略用户已提供的信息。构造请求时，将原文与 `trip_snapshot.trip_meta` 逐项核对：出发地 → `origin`，起止日期 → `start_date/end_date`，人数及房间数 → `travelers`，床型 → `room_preference`。即使 `services` 为空也保留这些字段；未知项保持未知，不重新询问已确认信息、不从城市猜日期或人数。
+
+例如用户已确认“2027-01-01 香港出发，01-03 返回，2 成人、0 儿童、1 间大床房”，对应：
+
+```json
+{
+  "origin": {"name": "香港", "airport_code": "HKG", "country_code": "HK"},
+  "start_date": "2027-01-01",
+  "end_date": "2027-01-03",
+  "travelers": {"total": 2, "adults": 2, "children": 0, "rooms": 1, "adults_per_room": 2},
+  "room_preference": {"bed_type": "king", "beds": 1}
+}
+```
+
+将这些字段合入本次 `trip_meta`，保留原有目的地与币种；日期与各天安排一致，不能因为接口允许缺省而丢掉已知值。
+
 ## 确定性请求工具
 
 `prepare-poster-request.mjs` 的输入 JSON 只含 `trip_snapshot`、可选 `source_text`、`attachments`、`options`；不是已经封装的 HTTP 请求。工具添加固定 schema/input_mode/request_origin，校验服务状态，并将已有 `location.name` 确定性合入 `place_search_aliases`，不改变标题、节点顺序、坐标、服务状态或输入文件。输出父目录须预先存在，已有输出不会覆盖。
 
 ```bash
 node scripts/prepare-poster-request.mjs --input .tmp/input.json --key <当前任务稳定键> --output .tmp/request.json
-node scripts/prepare-poster-request.mjs --check-accepted .tmp/response.json --status 202
+node scripts/prepare-poster-request.mjs --check-accepted .tmp/accepted.json --status 202
 ```
+
+`--check-accepted` 只接收接口原始接受响应。`submit-poster-request.mjs` 已自行校验；它保存的结果为 `{accepted, http_status, elapsed_ms, attempts}`，交付时读取其中 `accepted.preview_url`，不要将整个结果包装再次当作接受响应校验。
 
 由宿主的已授权 HTTP 工具读取 request.json，向已确认 base 的 `/api/skill-roadbook` 发送该文件原文与同一 Header 幂等键。脚本本身不请求接口、不调用模型，也不自动轮询或重试。HTTP 工具不要回显完整响应进公共日志；私有任务内从经过校验的响应交付 Preview。运行脚本时以当前 Skill 目录为工作目录，或把脚本路径解析为绝对路径。请求、响应和重试记录都放当前任务 `.tmp` 并保持私有。
 
@@ -128,7 +148,7 @@ node scripts/prepare-poster-request.mjs --check-accepted .tmp/response.json --st
 
 同一逻辑提交保持 base、request_origin、Header 幂等键与 JSON 完全相同。首次通常 202，重放 200，复用同一 Trip。超时/断连最多同键重试一次；结果不明时保留请求，不换键碰运气。确认内容改变属于新修订，先确认旧提交状态；不要以更换键绕过 409。
 
-获得有效 Preview 后立即交付，页面异步更新素材；不要宣称所有素材已完成。链接拥有自身行程的编辑能力，应视作秘密，只交付给请求者，不放公共日志、截图报告或分析事件。
+获得有效 Preview 后立即交付，页面异步更新素材；不要宣称所有素材已完成。Preview 是公开只读链接，不是编辑凭证；仅向请求者交付，日志和验收报告遵循最小披露，编辑仍须真实账号会话。
 
 ## 编辑、账号保存与只读分享
 

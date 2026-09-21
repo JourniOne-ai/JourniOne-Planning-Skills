@@ -216,7 +216,7 @@ TourMind 用 HTTPS POST、`YYYY-MM-DD` 日期及 `legs` 数组，返回值须 `c
 3. 冻结 `flipmind-trip-snapshot@1.0.0`：完整内容使用 `exact`；仅允许补明确缺口时使用 `complete_missing`。保留每一天全部正式点位、顺序、时间/时长、来源和真实已有服务，不只传 source_text。日期未知使用 Day 1–Day N；PDF 未写时钟时不得把估算称为原文时间。坐标未知保留名称，由服务端解析，不伪造。
 4. 生成请求使用 `input_mode: structured`，不发送生成 profile、renderer、feature、research 或 owner 控制字段。附件提供已授权的 extracted_text 或有效图片 Data URL，不直接上传 PDF 二进制或本地文件路径。隐私与大小限制见请求契约。
 5. 用 `scripts/prepare-poster-request.mjs` 从 JSON 输入生成确定性请求文件；它只校验和组装，不联网、不调用模型。服务状态与活动状态分开：服务计划建议用 suggested、已暂选用 selected，不能写 planned；地点名与活动描述分开，脚本将已有 location.name 合入搜索别名，具体规则见请求契约。传入由当前任务保存的 8–160 字符 Idempotency-Key；同一次提交的超时重试复用同一键和原始请求，不能重排或补字段。HTTP 请求携带该 Header 与 application/json，不携带登录令牌。
-6. 每次提交前检查请求仍对应用户确认版本。实际调用由宿主 HTTP 工具完成，不自行配置服务端密钥。只接受成功状态 200/202 且 `flipmind-skill-poster-accepted@2.0.0`、mode=poster、有效 job_id/trip_id/preview_url 的响应；可用 `validatePosterAccepted` 验证，不从 ID 拼接交付链接。
+6. 每次提交前检查请求仍对应用户确认版本：已知的出发地、起止日期、成人/儿童/房间数和床型须写入 `trip_meta`（见请求契约），不能只留在正文、卡片或每日日期中；没有机酒预订也照常保留，未知项不猜测、不阻塞生成。实际调用由宿主 HTTP 工具完成，不自行配置服务端密钥。只接受成功状态 200/202 且 `flipmind-skill-poster-accepted@2.0.0`、mode=poster、有效 job_id/trip_id/preview_url 的响应；可用 `validatePosterAccepted` 验证，不从 ID 拼接交付链接。
 7. 正常任务在拿到 Preview 后立即交付，不等待视觉完成。用户明确要求 QA 或模板验收时才继续检查生成状态、点击区域、内容完整性、编辑持久化和账号保存；区分“返回链接”和“全部素材已生成”。
 8. 传输超时/断连可原请求同键重试一次；429 遵守 Retry-After，默认停止并保留请求。400/413/415/422 修正明确输入错误后再提交，409 不更换键绕过冲突，503 配置未就绪时停止，不反复生成或降级到其他接口。不要打印完整响应或 Preview 到公共日志。
 9. Preview 未登录时只读。用户点击「保存为我的日志」、编辑或添加酒店/机票后，复用现有 AAuth 登录并自动保存或复用个人副本，继续原操作；浏览器已有登录状态时打开即自动保存。自动编辑仅在明确要求时进行，读取当前账号个人日志的最新版本，再提交带 If-Match 的 TripPatch；不猜测编辑端点、不修改公共原件、不注入 owner 字段。当前宿主不支持网页登录时交接页面操作。
