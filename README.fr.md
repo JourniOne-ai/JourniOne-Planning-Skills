@@ -76,6 +76,8 @@ D'autres situations figurent dans les [exemples](EXAMPLES.md).
 
 ## Version et aide
 
-Version du paquet : **1.0.1**. La [liste de vérification du lancement](RELEASE-CHECKLIST.md) présente la préparation du paquet et les contrôles en ligne historiques. Les vérifications datées décrivent la situation à ce moment-là, et non l'état actuel du service. Les résultats de création, de recherche et de réservation dépendent des réponses des services concernés.
+Version du paquet : **1.0.3**. La [liste de vérification du lancement](RELEASE-CHECKLIST.md) présente la préparation du paquet et les contrôles en ligne historiques. Les vérifications datées décrivent la situation à ce moment-là, et non l'état actuel du service. Les résultats de création, de recherche et de réservation dépendent des réponses des services concernés.
+
+La version **1.0.3** enregistre trois étapes de planification. L’envoi est activé par défaut et peut être désactivé durablement. Elle ne compte ni les installations ni les conversations et n’envoie pas le contenu des échanges. Voir [Confidentialité](PRIVACY.md). L’API de génération et le schéma des requêtes restent inchangés.
 
 [Questions fréquentes](FAQ.md) · [Historique des versions](CHANGELOG.md) · [Dépendances](DEPENDENCIES.md) · [Instructions pour l'agent](SKILL.md)

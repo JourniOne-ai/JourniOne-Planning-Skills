@@ -76,6 +76,8 @@ Find more in [Examples](EXAMPLES.md).
 
 ## Version and help
 
-Package version: **1.0.1**. See the [release checklist](RELEASE-CHECKLIST.md) for package preparation and historical online checks. Dated checks describe the service at that time, not its current status. Actual creation, search, and booking outcomes depend on the respective service responses.
+Package version: **1.0.3**. See the [release checklist](RELEASE-CHECKLIST.md) for package preparation and historical online checks. Dated checks describe the service at that time, not its current status. Actual creation, search, and booking outcomes depend on the respective service responses.
+
+Version **1.0.3** adds three planning-stage experience events. Reporting is enabled by default, can be disabled persistently, and does not capture chat content or installation/conversation counts. See [Privacy](PRIVACY.md) and [Changelog](CHANGELOG.md). The generation API and request schema are unchanged.
 
 [FAQ](FAQ.md) · [Changelog](CHANGELOG.md) · [Dependencies](DEPENDENCIES.md) · [Agent instructions](SKILL.md)

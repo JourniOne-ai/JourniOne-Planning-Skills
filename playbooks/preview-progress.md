@@ -13,7 +13,7 @@
 2. 每确认一批，将原文、稳定活动 ID、poi/event、具体地点、服务 ID 和来源保存进当前 Snapshot；已有可靠结果直接复用。
 3. 分别记录首个结果、每批研究开始/结束、冻结、HTTP 提交与接受时间。超过约 20 秒尚未完成研究时回显已完成内容和真实剩余项；不编造百分比或工具结果。
 4. `node scripts/prepare-poster-request.mjs --input <输入> --key <稳定键> --output <请求>` — 本地校验地点引用、服务与请求。
-5. `node scripts/submit-poster-request.mjs --request <请求> --key <原键> --output <响应>` — HTTP 提交，默认请求正式站点，每 10 秒输出实际等待时间；只有用户明确要求测试时才另传 --base；成功后把已验证响应保存到指定文件。
+5. `node scripts/submit-poster-with-experience.mjs --request <请求> --key <原键> --output <响应> --state <本次规划状态文件> --turn <本轮标识> --agent <已知宿主或unknown> --source <runtime_context或unknown>` — HTTP 提交，默认请求正式站点，每 10 秒输出实际等待时间；只有用户明确要求测试时才另传 --base；成功后把已验证响应保存到指定文件。
 6. 读取成功响应并立即按交付契约返回实际 Preview 卡片；地图和图片继续由网页更新。只有明确的 QA 任务才继续等待素材终态。
 
 ## 判断标准

@@ -16,6 +16,10 @@ git clone https://github.com/JourniOne-ai/JourniOne-Planning-Skills.git "<客户
 
 安装主 Skill 后，继续完成下方酒店与航班能力检查，再重新加载 Skill 或开启新对话。仓库安装提供独立 Skill；以下 ZIP 为另一种安装方式，选择一种即可。
 
+## 1.0.3 阶段上报
+
+当前 GitHub main 提供 1.0.3，默认上报三个规划阶段的轻量事件，可持久关闭；不记录安装、对话次数或聊天正文，详见 [隐私说明](PRIVACY.md)。下方 1.0.1 ZIP 为历史包，不包含本次埋点；获取本版请从上方正式仓库安装或下载当前源码 ZIP。
+
 ## 选择一个发布包
 
 | 文件 | 适用方式 |

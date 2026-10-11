@@ -67,6 +67,9 @@ node scripts/prepare-poster-request.mjs --check-accepted .tmp/response.json --st
 
 ## 冻结 Snapshot 与内容完整性
 
+- 已确认的出发地、起止日期、同行人数及房间偏好必须分别写入 `trip_snapshot.trip_meta.origin`、`start_date`、`end_date`、`travelers`、`room_preference`；未选择机酒预订不能成为省略这些事实的理由。只保留在 source_text、正文或 days[].date 不足以完成结构化交接。提交前逐项对照用户确认稿；未提供的字段允许为空，不猜测、不重问已知信息。
+- 例如用户已确认香港出发、2027-01-01 至 2027-01-03、2 位成人、1 间大床房：origin 保留香港，start_date/end_date 保留这两个日期，travelers.adults=2、travelers.rooms=1，room_preference.bed_type 保留确认的床型；services 仍可为空。这里只展示字段映射，实际值以本次确认稿为准，不能套用示例日期或人数。
+
 - Snapshot 保持 `flipmind-trip-snapshot@1.0.0`；内容完整时 exact，仅补明确缺口时 complete_missing。
 - 每天正式地点与非预定类安排写入 days[].activities[]；票务、演唱会、餐厅及展览预约写入 services.reservations[] 并通过 poi_id 关联地点（详见 [活动与预定契约](activity-bookings.md)），不重复创建活动节点。地点保持稳定 id/order/title；标题、总览、时间、停留、来源和用户锁定事实均保留。至少一个具名正式点位；只有标题、空 days 或仅 source_text 不可提交。
 - 已核验 WGS-84 坐标原样保留，并标记 `location.coordinate_system: "WGS84"`；未知时保留具名 location，不写 0,0、估计值或错误坐标系。服务端负责继续解析，不能删掉无法解析的正式点位。客户端在确认稿阶段完成必要核验，将同一 Snapshot 交给卡片脚本生成逐日与单点 Google Maps，不以服务端稍后解析为由省略已有地图；最终仍缺失的点按交付契约明确显示。

@@ -1,5 +1,13 @@
 # 版本变化
 
+## 1.0.3 · Travel Journal Creator · 2026-10-11
+
+- 在正式仓库 JourniOne-ai/JourniOne-Planning-Skills 发布 Agent 规划启动、首版完整逐日草稿和 Journal 提交三个阶段的轻量埋点。
+- 正式版默认连接 JourniOne 上报端点；按规划去重、同轮合批，失败不阻断业务，并补齐隐私披露与持久关闭方式。
+- 普通生成由 submit-poster-with-experience.mjs 包装原脚本，保留原请求、幂等键和交付判定；补充已确认出行事实的结构化交接说明。
+- 沿用 JourniOne 品牌、正式安装地址和已有 WebP 展示图；本版不包含安装完成、Skill 读取、对话开始或每轮消息事件。
+- 本次修正分发仓库；GitHub 发布不等于客户端已更新或正式库入库验收。
+
 ## 1.0.1 · Travel Journal Creator · 2026-09-15
 
 - 显示名称统一为 Travel Journal Creator，用户提出旅行需求时自动触发，技术标识保持兼容。

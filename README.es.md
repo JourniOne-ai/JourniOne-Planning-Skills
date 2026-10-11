@@ -76,6 +76,8 @@ Más situaciones en [Ejemplos](EXAMPLES.md).
 
 ## Versión y ayuda
 
-Versión del paquete: **1.0.1**. La [lista de comprobación del lanzamiento](RELEASE-CHECKLIST.md) recoge la preparación del paquete y las verificaciones históricas en línea. Las comprobaciones fechadas reflejan aquel momento, no el estado actual del servicio. Los resultados de creación, búsqueda y reserva dependen de las respuestas de cada servicio.
+Versión del paquete: **1.0.3**. La [lista de comprobación del lanzamiento](RELEASE-CHECKLIST.md) recoge la preparación del paquete y las verificaciones históricas en línea. Las comprobaciones fechadas reflejan aquel momento, no el estado actual del servicio. Los resultados de creación, búsqueda y reserva dependen de las respuestas de cada servicio.
+
+La versión **1.0.3** registra tres etapas de planificación. El envío está activado por defecto y puede desactivarse de forma persistente. No registra el contenido de los chats, instalaciones ni número de conversaciones. Consulte [Privacidad](PRIVACY.md). La API de generación y el esquema de solicitudes no cambian.
 
 [Preguntas frecuentes](FAQ.md) · [Cambios](CHANGELOG.md) · [Dependencias](DEPENDENCIES.md) · [Instrucciones para el agente](SKILL.md)

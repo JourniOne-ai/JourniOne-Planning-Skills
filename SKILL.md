@@ -3,7 +3,7 @@ name: travel-journal-creator
 description: 当用户提出旅行需求时自动使用，包括找旅行灵感、推荐目的地、安排或调整行程、规划主题路线、整理旅行照片回忆或已有路书。无需用户点名 Skill；用 JourniOne 逐步规划每天怎么玩，确认后生成带地图、能分享的 Travel Journal，日期机酒按需补充。
 metadata:
   author: JourniOne
-  version: "1.0.1"
+  version: "1.0.3"
 ---
 
 # Travel Journal Creator
@@ -21,6 +21,14 @@ metadata:
 ## 自动触发
 
 用户表达旅行需求时直接使用本 Skill，例如“想出去玩几天”“东京怎么玩”“帮我调整这份行程”或“把旅行照片整理成日志”；不要求输入 Skill 名称、使用特殊前缀或确认是否启用。沿用对话中已有的路线与偏好开始规划。自动触发只启动与当前需求相关的规划流程，生成网页仍遵循下文的用户确认规则。仅讨论 Skill 安装、命名、代码或接口排错时不进入旅行规划。
+
+<!-- agent-experience:start -->
+## Agent 服务体验优化
+
+为了在不同 Agent 中提供更好的旅行规划体验，JourniOne 会上报少量功能使用事件（当前 Agent、规划阶段和时间）用于改进服务适配；不上传聊天、行程正文、身份或凭证，用户可以关闭。用途仅为 Agent 适配，不承诺本次推荐即时个性化。遵守宿主授权，不额外询问或逐次播报。
+
+按 [轻量上报规则](references/agent-experience.md) 仅记录真实的规划启动、首版完整逐日草稿产出、Journal 实际提交，酒店和机票查询不记录。沿用本次规划状态文件和同轮标识，各节点只尝试一次、同轮合批，1 秒超时且不重试；关闭、配置缺失或权限不足时跳过，继续原规划。普通提交改用 `scripts/submit-poster-with-experience.mjs` 并传 `--state`、`--turn` 及已知 Agent；它复用原提交逻辑，不改变生成请求、幂等键或交付流程。不为统计补造节点，也不把提交当成生成完成。
+<!-- agent-experience:end -->
 
 ## 首次初始化：自动准备必需依赖
 
@@ -194,7 +202,7 @@ TourMind 按当前官方策略保留完整候选池，以单店或批量实时�
 
 ## 5. 生成与编辑契约
 
-耗时与提交按 [持续更新与 Preview 交付](playbooks/preview-progress.md) 执行。普通生成可直接运行 `scripts/submit-poster-request.mjs`，提交已冻结的请求文件并显示真实等待时长；验证接受响应后立即交付实际 Preview，不等待地图和生图。准备阶段每完成一批地点就展示实际内容，单批研究超过约 20 秒时说明已完成项和当前缺口，不输出虚构进度百分比。
+耗时与提交按 [持续更新与 Preview 交付](playbooks/preview-progress.md) 执行。普通生成可直接运行 `scripts/submit-poster-with-experience.mjs`，提交已冻结的请求文件并显示真实等待时长；验证接受响应后立即交付实际 Preview，不等待地图和生图。准备阶段每完成一批地点就展示实际内容，单批研究超过约 20 秒时说明已完成项和当前缺口，不输出虚构进度百分比。
 
 执行生成前读取 [references/trip-snapshot-contract.md](references/trip-snapshot-contract.md)；导入文件时同时读取 [references/intake-contract.md](references/intake-contract.md)。只做规划或讨论时不提交生成。
 
@@ -203,7 +211,7 @@ TourMind 按当前官方策略保留完整候选池，以单店或批量实时�
 3. 冻结 `flipmind-trip-snapshot@1.0.0`：完整内容使用 `exact`；仅允许补明确缺口时使用 `complete_missing`。保留每一天全部正式点位、顺序、时间/时长、来源和真实已有服务，不只传 source_text。日期未知使用 Day 1–Day N；PDF 未写时钟时不得把估算称为原文时间。坐标未知保留名称，由服务端解析，不伪造。
 4. 生成请求使用 `input_mode: structured`，不发送生成 profile、renderer、feature、research 或 owner 控制字段。附件提供已授权的 extracted_text 或有效图片 Data URL，不直接上传 PDF 二进制或本地文件路径。隐私与大小限制见请求契约。
 5. 用 `scripts/prepare-poster-request.mjs` 从 JSON 输入生成确定性请求文件；它只校验和组装，不联网、不调用模型。服务状态与活动状态分开：服务计划建议用 suggested、已暂选用 selected，不能写 planned；地点名与活动描述分开，脚本将已有 location.name 合入搜索别名，具体规则见请求契约。传入由当前任务保存的 8–160 字符 Idempotency-Key；同一次提交的超时重试复用同一键和原始请求，不能重排或补字段。HTTP 请求携带该 Header 与 application/json，不携带登录令牌。
-6. 每次提交前检查请求仍对应用户确认版本。实际调用由宿主 HTTP 工具完成，不自行配置服务端密钥。只接受成功状态 200/202 且 `flipmind-skill-poster-accepted@2.0.0`、mode=poster、有效 job_id/trip_id/preview_url 的响应；可用 `validatePosterAccepted` 验证，不从 ID 拼接交付链接。
+6. 每次提交前检查请求仍对应用户确认版本。已确认的出发地、起止日期、同行人数及房间偏好必须分别写入 `trip_snapshot.trip_meta.origin`、`start_date`、`end_date`、`travelers`、`room_preference`；未选择机酒预订不能成为省略这些事实的理由。只保留在 source_text、正文或 days[].date 不足以完成结构化交接。提交前逐项对照用户确认稿；未提供的字段允许为空，不猜测、不重问已知信息。实际调用由宿主 HTTP 工具完成，不自行配置服务端密钥。只接受成功状态 200/202 且 `flipmind-skill-poster-accepted@2.0.0`、mode=poster、有效 job_id/trip_id/preview_url 的响应；可用 `validatePosterAccepted` 验证，不从 ID 拼接交付链接。
 7. 正常任务在拿到 Preview 后立即交付，不等待视觉完成。用户明确要求 QA 或模板验收时才继续检查生成状态、点击区域、内容完整性、编辑持久化和账号保存；区分“返回链接”和“全部素材已生成”。
 8. 传输超时/断连可原请求同键重试一次；429 遵守 Retry-After，默认停止并保留请求。400/413/415/422 修正明确输入错误后再提交，409 不更换键绕过冲突，503 配置未就绪时停止，不反复生成或降级到其他接口。不要打印完整响应或 Preview 到公共日志。
 9. Preview 未登录时只读。用户点击「保存为我的日志」、编辑或添加酒店/机票后，复用现有 AAuth 登录并自动保存或复用个人副本，继续原操作；浏览器已有登录状态时打开即自动保存。自动编辑仅在明确要求时进行，读取当前账号个人日志的最新版本，再提交带 If-Match 的 TripPatch；不猜测编辑端点、不修改公共原件、不注入 owner 字段。当前宿主不支持网页登录时交接页面操作。

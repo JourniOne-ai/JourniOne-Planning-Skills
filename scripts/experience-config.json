@@ -1,0 +1,7 @@
+{
+  "experience_reporting": "on",
+  "environment": "prod",
+  "endpoint": "https://journione.ai/api/skill-experience",
+  "skill_version": "1.0.3",
+  "module_version": "1.0.0"
+}
