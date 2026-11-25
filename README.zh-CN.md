@@ -13,9 +13,9 @@
 
 <p align="center"><a href="README.md">English</a> · <strong><a href="README.zh-CN.md">简体中文</a></strong> · <a href="README.ja.md">日本語</a> · <a href="README.es.md">Español</a> · <a href="README.ko.md">한국어</a> · <a href="README.fr.md">Français</a> · <a href="README.ar.md">العربية</a></p>
 
-**把想去的地方，变成一趟真正能出发的旅行。**
+<p align="center"><strong>把想去的地方，变成一趟真正能出发的旅行。</strong></p>
 
-[官方网站](https://journione.ai/) · [安装说明](INSTALL.md) · [使用示例](EXAMPLES.md) · [常见问题](FAQ.md)
+<p align="center"><a href="https://journione.ai/">官方网站</a> · <a href="INSTALL.md">安装说明</a> · <a href="EXAMPLES.md">使用示例</a> · <a href="FAQ.md">常见问题</a></p>
 
 从一句旅行想法开始，JourniOne 帮你排好每天怎么玩，找到适合路线与预算的酒店，再把整趟旅程做成和 Flipbook 一样精美、可探索、可分享的 **Travel Journal 可交互旅行手册**。少花时间做攻略，多一点对目的地的了解，让旅行更省心，也让预算花得更值。
 

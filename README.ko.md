@@ -13,9 +13,9 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.es.md">Español</a> · <strong><a href="README.ko.md">한국어</a></strong> · <a href="README.fr.md">Français</a> · <a href="README.ar.md">العربية</a></p>
 
-**가고 싶은 곳을, 실제로 떠날 수 있는 여행으로.**
+<p align="center"><strong>가고 싶은 곳을, 실제로 떠날 수 있는 여행으로.</strong></p>
 
-[공식 웹사이트](https://journione.ai/) · [설치 안내](INSTALL.md) · [사용 예시](EXAMPLES.md) · [자주 묻는 질문](FAQ.md)
+<p align="center"><a href="https://journione.ai/">공식 웹사이트</a> · <a href="INSTALL.md">설치 안내</a> · <a href="EXAMPLES.md">사용 예시</a> · <a href="FAQ.md">자주 묻는 질문</a></p>
 
 여행 아이디어 한마디로 시작하세요. JourniOne은 매일 무엇을 할지 계획하고, 동선과 예산에 맞는 호텔을 찾고, 여행 전체를 아름답게 살펴보고 공유할 수 있는 **Travel Journal 인터랙티브 여행 가이드**로 만듭니다. 플립북을 넘기듯 여행을 둘러보세요. 정보를 모으는 시간은 줄이고, 목적지는 더 깊이 이해하며, 예산은 더 알차게 쓸 수 있습니다.
 

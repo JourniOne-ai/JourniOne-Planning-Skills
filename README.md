@@ -13,9 +13,9 @@
 
 <p align="center"><strong><a href="README.md">English</a></strong> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.es.md">Español</a> · <a href="README.ko.md">한국어</a> · <a href="README.fr.md">Français</a> · <a href="README.ar.md">العربية</a></p>
 
-**Turn the places you dream of into a trip you can actually take.**
+<p align="center"><strong>Turn the places you dream of into a trip you can actually take.</strong></p>
 
-[Website](https://journione.ai/) · [Installation](INSTALL.md) · [Examples](EXAMPLES.md) · [FAQ](FAQ.md)
+<p align="center"><a href="https://journione.ai/">Website</a> · <a href="INSTALL.md">Installation</a> · <a href="EXAMPLES.md">Examples</a> · <a href="FAQ.md">FAQ</a></p>
 
 Start with a travel idea. JourniOne helps you plan each day, find hotels that fit your route and budget, and bring everything together in a beautiful **Travel Journal—an interactive travel guide** you can explore and share like a flipbook. Spend less time piecing together advice, learn more about your destination, and make your travel budget go further.
 

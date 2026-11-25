@@ -13,9 +13,9 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <strong><a href="README.ja.md">日本語</a></strong> · <a href="README.es.md">Español</a> · <a href="README.ko.md">한국어</a> · <a href="README.fr.md">Français</a> · <a href="README.ar.md">العربية</a></p>
 
-**行きたい場所を、本当に出かけられる旅に。**
+<p align="center"><strong>行きたい場所を、本当に出かけられる旅に。</strong></p>
 
-[公式サイト](https://journione.ai/) · [インストール](INSTALL.md) · [使用例](EXAMPLES.md) · [よくある質問](FAQ.md)
+<p align="center"><a href="https://journione.ai/">公式サイト</a> · <a href="INSTALL.md">インストール</a> · <a href="EXAMPLES.md">使用例</a> · <a href="FAQ.md">よくある質問</a></p>
 
 旅のアイデアをひと言伝えるところから。JourniOne は毎日の過ごし方を組み立て、ルートと予算に合うホテルを探し、旅全体を美しく、詳しく見られて共有もできる **Travel Journal — インタラクティブな旅行ガイド**にまとめます。フリップブックをめくるように旅を眺めながら、下調べの手間を減らし、目的地をもっと知り、予算を上手に使えます。
 

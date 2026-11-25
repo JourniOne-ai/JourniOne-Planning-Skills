@@ -13,9 +13,9 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.es.md">Español</a> · <a href="README.ko.md">한국어</a> · <strong><a href="README.fr.md">Français</a></strong> · <a href="README.ar.md">العربية</a></p>
 
-**Transformez les lieux qui vous font rêver en un voyage que vous pouvez vraiment faire.**
+<p align="center"><strong>Transformez les lieux qui vous font rêver en un voyage que vous pouvez vraiment faire.</strong></p>
 
-[Site officiel](https://journione.ai/) · [Installation](INSTALL.md) · [Exemples](EXAMPLES.md) · [Questions fréquentes](FAQ.md)
+<p align="center"><a href="https://journione.ai/">Site officiel</a> · <a href="INSTALL.md">Installation</a> · <a href="EXAMPLES.md">Exemples</a> · <a href="FAQ.md">Questions fréquentes</a></p>
 
 Partez d'une idée de voyage. JourniOne vous aide à organiser chaque journée, à trouver des hôtels adaptés à votre parcours et à votre budget, puis à réunir le tout dans un **Travel Journal : un guide de voyage interactif**, élégant, à explorer et à partager comme un carnet que l'on feuillette. Passez moins de temps à rassembler des conseils, découvrez mieux votre destination et profitez davantage de votre budget.
 
