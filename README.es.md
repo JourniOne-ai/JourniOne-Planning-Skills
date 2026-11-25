@@ -4,6 +4,8 @@
 
 # JourniOne · Travel Journal Creator
 
+[![Licencia MIT](https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills)](LICENSE)
+
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · **[Español](README.es.md)** · [한국어](README.ko.md) · [Français](README.fr.md) · [العربية](README.ar.md)
 
 **Convierte los lugares que sueñas visitar en un viaje que puedas hacer realidad.**
@@ -81,3 +83,5 @@ Versión del paquete: **1.0.3**. La [lista de comprobación del lanzamiento](REL
 La versión **1.0.3** registra tres etapas de planificación. El envío está activado por defecto y puede desactivarse de forma persistente. No registra el contenido de los chats, instalaciones ni número de conversaciones. Consulte [Privacidad](PRIVACY.md). La API de generación y el esquema de solicitudes no cambian.
 
 [Preguntas frecuentes](FAQ.md) · [Cambios](CHANGELOG.md) · [Dependencias](DEPENDENCIES.md) · [Instrucciones para el agente](SKILL.md)
+
+[MIT](LICENSE) © 2026 JourniOne

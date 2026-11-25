@@ -4,6 +4,8 @@
 
 # JourniOne · Travel Journal Creator
 
+[![MIT 라이선스](https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills)](LICENSE)
+
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · **[한국어](README.ko.md)** · [Français](README.fr.md) · [العربية](README.ar.md)
 
 **가고 싶은 곳을, 실제로 떠날 수 있는 여행으로.**
@@ -81,3 +83,5 @@ JourniOne은 **TourMind 호텔 검색·예약 서비스**를 통해 Ctrip, Fligg
 **1.0.3**은 여행 계획의 세 단계를 기록합니다. 보고는 기본적으로 켜져 있으며 지속적으로 끌 수 있습니다. 대화 내용, 설치 수, 대화 횟수는 기록하지 않습니다. [개인정보 안내](PRIVACY.md)를 확인하세요. 생성 API와 요청 스키마는 동일합니다.
 
 [자주 묻는 질문](FAQ.md) · [변경 이력](CHANGELOG.md) · [의존성 안내](DEPENDENCIES.md) · [Agent 사용 지침](SKILL.md)
+
+[MIT](LICENSE) © 2026 JourniOne

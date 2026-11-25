@@ -4,6 +4,8 @@
 
 # JourniOne · Travel Journal Creator
 
+[![MIT ライセンス](https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills)](LICENSE)
+
 [English](README.md) · [简体中文](README.zh-CN.md) · **[日本語](README.ja.md)** · [Español](README.es.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [العربية](README.ar.md)
 
 **行きたい場所を、本当に出かけられる旅に。**
@@ -81,3 +83,5 @@ JourniOne は **TourMind のホテル検索・予約サービス**を通じて�
 **1.0.3** では旅行計画の3段階を記録します。報告は既定で有効ですが、継続的に無効化できます。会話内容、インストール数、会話回数は記録しません。[プライバシー説明](PRIVACY.md)をご覧ください。生成 API とリクエスト形式は変更していません。
 
 [よくある質問](FAQ.md) · [変更履歴](CHANGELOG.md) · [依存関係](DEPENDENCIES.md) · [Agent 向け手順](SKILL.md)
+
+[MIT](LICENSE) © 2026 JourniOne

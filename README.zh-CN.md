@@ -4,6 +4,8 @@
 
 # JourniOne · Travel Journal Creator
 
+[![MIT 许可证](https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills)](LICENSE)
+
 [English](README.md) · **[简体中文](README.zh-CN.md)** · [日本語](README.ja.md) · [Español](README.es.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [العربية](README.ar.md)
 
 **把想去的地方，变成一趟真正能出发的旅行。**
@@ -81,3 +83,5 @@ JourniOne 通过 **TourMind 酒店查询与预订服务**，查询聚合携程�
 **1.0.3** 增加三个规划阶段的轻量埋点，默认开启、可持久关闭；不记录聊天内容、安装量或对话次数。详见[隐私说明](PRIVACY.md)和[更新日志](CHANGELOG.md)。生成接口与请求 Schema 不变。
 
 [常见问题](FAQ.md) · [版本变化](CHANGELOG.md) · [依赖说明](DEPENDENCIES.md) · [Agent 操作说明](SKILL.md)
+
+[MIT](LICENSE) © 2026 JourniOne

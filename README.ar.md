@@ -4,6 +4,8 @@
 
 # JourniOne · Travel Journal Creator
 
+[![رخصة MIT](https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills)](LICENSE)
+
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · [한국어](README.ko.md) · [Français](README.fr.md) · **[العربية](README.ar.md)**
 
 <div dir="rtl" lang="ar">
@@ -83,5 +85,7 @@
 يسجل الإصدار **1.0.3** ثلاث مراحل من تخطيط الرحلة. الإبلاغ مفعّل افتراضيًا ويمكن إيقافه بشكل دائم. لا يسجل محتوى المحادثات أو عدد التثبيتات أو المحادثات. راجع [الخصوصية](PRIVACY.md). تبقى واجهة الإنشاء ومخطط الطلب دون تغيير.
 
 [الأسئلة الشائعة](FAQ.md) · [سجل التغييرات](CHANGELOG.md) · [الاعتماديات](DEPENDENCIES.md) · [تعليمات الوكيل](SKILL.md)
+
+[MIT](LICENSE) © 2026 JourniOne
 
 </div>
