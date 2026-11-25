@@ -18,14 +18,14 @@ git clone https://github.com/JourniOne-ai/JourniOne-Planning-Skills.git "<客户
 
 ## 1.0.3 阶段上报
 
-当前 GitHub main 提供 1.0.3，默认上报三个规划阶段的轻量事件，可持久关闭；不记录安装、对话次数或聊天正文，详见 [隐私说明](PRIVACY.md)。下方 1.0.1 ZIP 为历史包，不包含本次埋点；获取本版请从上方正式仓库安装或下载当前源码 ZIP。
+1.0.3 默认上报三个规划阶段的轻量事件，可持久关闭；不记录安装、对话次数或聊天正文，详见 [隐私说明](PRIVACY.md)。
 
-## 选择一个发布包
+## 下载 1.0.3 安装包
 
 | 文件 | 适用方式 |
 |---|---|
-| `journione-1.0.1-skill.zip` | 支持 Agent Skills 的客户端，解压后包含 `travel-journal-creator/SKILL.md` |
-| `journione-1.0.1-plugin.zip` | 支持 Codex 插件目录的客户端，解压后包含 `journione/.codex-plugin/plugin.json` |
+| [journione-1.0.3-skill.zip](https://github.com/JourniOne-ai/JourniOne-Planning-Skills/releases/download/v1.0.3/journione-1.0.3-skill.zip) | 支持 Agent Skills 的客户端，解压后包含 `travel-journal-creator/SKILL.md` |
+| [journione-1.0.3-plugin.zip](https://github.com/JourniOne-ai/JourniOne-Planning-Skills/releases/download/v1.0.3/journione-1.0.3-plugin.zip) | 支持 Codex 插件目录的客户端，解压后包含 `journione/.codex-plugin/plugin.json` |
 
 两种包提供相同的旅行规划能力。选择一种安装，避免同一能力重复出现。
 
@@ -39,7 +39,7 @@ git clone https://github.com/JourniOne-ai/JourniOne-Planning-Skills.git "<客户
 
 解压插件包，保留整个 `journione` 目录。在当前客户端支持的本地插件或市场导入入口选择该目录。不同版本的导入入口可能不同，请使用当前客户端提供的流程；本压缩包不包含远程市场发布或自动安装。
 
-插件显示为 **JourniOne 正式版**，包含同一 `travel-journal-creator` Skill。首次使用直接描述旅行想法，无需启动旧版 JourniOne MCP 服务。
+插件显示为 **Travel Journal Creator**，包含同一 `travel-journal-creator` Skill。首次使用直接描述旅行想法，无需启动旧版 JourniOne MCP 服务。
 
 ## 准备酒店与航班能力
 
