@@ -2,11 +2,16 @@
   <a href="https://journione.ai/"><img src="assets/journione-lockup.svg" alt="JourniOne" width="360"></a>
 </p>
 
-# JourniOne · Travel Journal Creator
+<h1 align="center">JourniOne · Travel Journal Creator</h1>
 
-[![MIT ライセンス](https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills)](LICENSE)
+<p align="center">
+  <a href="https://skillhub.cn/skills/user_5cb1a0c9/lvxingcduan" title="SkillHub · 2026-11-25"><img src="https://img.shields.io/badge/SkillHub_downloads-8.5k-orange" alt="SkillHub · 8.5k ダウンロード"></a>
+  <a href="https://skillhub.cn/skills/user_5cb1a0c9/lvxingcduan" title="SkillHub · 2026-11-25"><img src="https://img.shields.io/badge/SkillHub_AI_rating-4.8%2F5-orange" alt="SkillHub · AI 評価 4.8/5"></a>
+  <a href="https://github.com/JourniOne-ai/JourniOne-Planning-Skills/releases/latest"><img src="https://img.shields.io/github/v/release/JourniOne-ai/JourniOne-Planning-Skills" alt="GitHub Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/JourniOne-ai/JourniOne-Planning-Skills" alt="MIT ライセンス"></a>
+</p>
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **[日本語](README.ja.md)** · [Español](README.es.md) · [한국어](README.ko.md) · [Français](README.fr.md) · [العربية](README.ar.md)
+<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <strong><a href="README.ja.md">日本語</a></strong> · <a href="README.es.md">Español</a> · <a href="README.ko.md">한국어</a> · <a href="README.fr.md">Français</a> · <a href="README.ar.md">العربية</a></p>
 
 **行きたい場所を、本当に出かけられる旅に。**
 
